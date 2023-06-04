@@ -16,11 +16,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- datepicker -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-    />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../reset.css" />
     <link rel="stylesheet" type="text/css" href="OnlineCourse.css" />
@@ -54,8 +49,22 @@
           </li>
           <li>
             <a href="service" class="nav-link" onclick="navigate('/')"
-              >Services <RxTriangleDown
-            /></a>
+              >Services
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                  />
+                </svg>
+              </span>
+            </a>
             <ul class="subnav">
               <li>
                 <a href="/workshop" class="nav-link">Workshop</a>
@@ -81,7 +90,6 @@
           </li>
         </ul>
       </div>
-
       <div class="button-container">
         <button class="signup-button" onclick="toggleSignUpForm()">
           Sign Up
@@ -636,5 +644,6 @@
         </div>
       </div>
     </div>
+    <!-- end of footer -->
   </body>
 </html>
