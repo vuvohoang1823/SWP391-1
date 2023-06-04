@@ -283,4 +283,18 @@
 }
 .body-container .section-course .review-count {
   margin-left: auto;
+}
+
+.footer {
+  margin-top: 5%;
+}
+.footer .container {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.footer .row {
+  margin-top: 1%;
+}
+.footer .row div {
+  color: white;
 }/*# sourceMappingURL=OnlineCourse.css.map */
