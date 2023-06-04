@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
   text-decoration: none;
   list-style: none;
 }
@@ -101,7 +100,12 @@
   color: black;
   cursor: pointer;
 }
-.header-container .signin-button {
+.header-container .button-container {
+  width: 25%;
+  padding-right: 5%;
+}
+.header-container .button-container .signin-button {
+  float: right;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   min-width: 100px;
@@ -110,15 +114,16 @@
   color: #80957c;
   cursor: pointer;
 }
-.header-container .signin-button:hover {
+.header-container .button-container .signin-button:hover {
   color: #617a55;
 }
 @media screen and (max-width: 500px) {
-  .header-container .signin-button {
+  .header-container .button-container .signin-button {
     right: 15px;
   }
 }
-.header-container .signup-button {
+.header-container .button-container .signup-button {
+  float: right;
   background-color: #617a55;
   border-radius: 30px;
   min-width: 100px;
@@ -128,11 +133,11 @@
   border: 0;
   cursor: pointer;
 }
-.header-container .signup-button:hover {
+.header-container .button-container .signup-button:hover {
   background-color: #468847;
 }
 @media screen and (max-width: 500px) {
-  .header-container .signup-button {
+  .header-container .button-container .signup-button {
     right: 15px;
   }
 }
@@ -147,7 +152,7 @@
 .body-container section .heading div h1 {
   color: black;
   font-weight: bolder;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bolder;
   width: 100%;
 }
@@ -263,6 +268,11 @@
   text-align: center;
   margin-top: 15%;
   font-size: 20px;
+}
+.body-container .section-course .card-body .card-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .body-container .section-course .review {
   display: flex;

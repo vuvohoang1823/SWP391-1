@@ -15,7 +15,6 @@ $border-radius: 15px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
   text-decoration: none;
   list-style: none;
 }
@@ -118,42 +117,50 @@ $border-radius: 15px;
       }
     }
   }
-  .signin-button {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    min-width: 100px;
-    height: 35px;
-    font-size: 1.1em;
-    color: $green;
-    cursor: pointer;
 
-    &:hover {
-      color: #617a55;
+  .button-container {
+    width: 25%;
+    padding-right: 5%;
+    .signin-button {
+      float: right;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+      min-width: 100px;
+      height: 35px;
+      font-size: 1.1em;
+      color: $green;
+      cursor: pointer;
+
+      &:hover {
+        color: #617a55;
+      }
+
+      @media screen and (max-width: 500px) {
+        right: 15px;
+      }
     }
+    .signup-button {
+      float: right;
+      background-color: #617a55;
+      border-radius: 30px;
+      min-width: 100px;
+      height: 35px;
+      font-size: 1.1em;
+      color: white;
+      border: 0;
+      cursor: pointer;
 
-    @media screen and (max-width: 500px) {
-      right: 15px;
-    }
-  }
-  .signup-button {
-    background-color: #617a55;
-    border-radius: 30px;
-    min-width: 100px;
-    height: 35px;
-    font-size: 1.1em;
-    color: white;
-    border: 0;
-    cursor: pointer;
+      &:hover {
+        background-color: #468847;
+      }
 
-    &:hover {
-      background-color: #468847;
-    }
-
-    @media screen and (max-width: 500px) {
-      right: 15px;
+      @media screen and (max-width: 500px) {
+        right: 15px;
+      }
     }
   }
 }
+//end of header
 .body-container {
   section {
     .heading {
@@ -164,7 +171,7 @@ $border-radius: 15px;
         h1 {
           color: black;
           font-weight: bolder;
-          font-size: 90px;
+          font-size: 80px;
           font-weight: $bolding;
           width: 100%;
         }
@@ -285,6 +292,11 @@ $border-radius: 15px;
         text-align: center;
         margin-top: 15%;
         font-size: 20px;
+      }
+      .card-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
     }
 
