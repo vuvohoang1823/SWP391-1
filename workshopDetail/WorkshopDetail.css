@@ -200,6 +200,7 @@
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
+    background-color: white;
   }
   .checkout-container .checkout-box .order-detail-box {
     border: 1px solid #000000;
