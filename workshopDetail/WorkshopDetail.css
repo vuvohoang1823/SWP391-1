@@ -1,0 +1,265 @@
+.header-container {
+    z-index: 1000;
+    position: relative;
+    background-color: #dde6f1;
+    height: 7vh;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header-container .nav-link.active {
+    color: #80957c;
+  }
+  .header-container .logo-text,
+  .header-container .nav-link,
+  .header-container .nav-logo {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .header-container .logo-container {
+    display: flex;
+    width: 20%;
+  }
+  .header-container .logo-container .logo-image {
+    flex: 0 0 100%;
+  }
+  .header-container .logo-container .logo-image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .header-container .nav-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header-container .nav-container .nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-container .nav-container .nav li {
+    position: relative;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    transition: background-color 0.1s linear;
+  }
+  .header-container .nav-container .nav li:hover .nav-link {
+    color: #4d6144;
+  }
+  .header-container .nav-container .nav li:hover .subnav {
+    display: block;
+  }
+  .header-container .nav-container .nav li .nav-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header-container .nav-container .nav li .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px grey;
+    line-height: 200%;
+  }
+  .header-container .nav-container .nav li .subnav li {
+    padding: 0;
+    padding-left: 7%;
+    background-color: white;
+    width: 100%;
+  }
+  .header-container .nav-container .nav li .subnav li:hover {
+    background-color: #468847;
+  }
+  .header-container .nav-container .nav li .subnav li:hover .subnav {
+    display: flex;
+  }
+  .header-container .nav-container .nav li .subnav .nav-link {
+    color: black;
+    cursor: pointer;
+  }
+  .header-container .button-container {
+    width: 25%;
+    padding-right: 5%;
+  }
+  .header-container .button-container .signin-button {
+    float: right;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 100px;
+    height: 35px;
+    font-size: 1.1em;
+    color: #80957c;
+    cursor: pointer;
+  }
+  .header-container .button-container .signin-button:hover {
+    color: #617a55;
+  }
+  @media screen and (max-width: 500px) {
+    .header-container .button-container .signin-button {
+      right: 15px;
+    }
+  }
+  .header-container .button-container .signup-button {
+    float: right;
+    background-color: #617a55;
+    border-radius: 30px;
+    min-width: 100px;
+    height: 35px;
+    font-size: 1.1em;
+    color: white;
+    border: 0;
+    cursor: pointer;
+  }
+  .header-container .button-container .signup-button:hover {
+    background-color: #468847;
+  }
+  @media screen and (max-width: 500px) {
+    .header-container .button-container .signup-button {
+      right: 15px;
+    }
+  }
+.body-container .workshop-detail-container{
+    background-color: #B8C6C2;
+    padding: 20px;
+}
+.body-container .workshop-detail-container .text{
+    text-align: center;
+    font-weight: bolder;
+    color: #617a55;
+}
+.body-container .section-workshops .row {
+    justify-content: center;
+  }
+  .body-container .section-workshops .row .card {
+    border-radius: 15px;
+    margin-top: 5%;
+    padding: 3%;
+  }
+  .body-container .section-workshops .row .card .card-img {
+    border-radius: 7%;
+  }
+  .body-container .section-workshops .row .card .card-body {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+    line-height: 150%;
+  }
+  .body-container .section-workshops .row .card .card-body .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #617a55;
+  }
+  .body-container .section-workshops .row .card .card-body .extra-price {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .body-container .section-workshops .row .card .card-body .extra-price .button-container {
+    width: 80%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .body-container .section-workshops .row .card .card-body .extra-price .button-container button {
+    border: 0px;
+    border-radius: 10px;
+    background-color: #f69c14;
+    color: white;
+    padding: 5px;
+    width: 50%;
+  }
+  .body-container .section-workshops .row .card .card-body .extra-price p {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #617a55;
+  }
+  .checkout-container .checkout-box {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  .checkout-container .checkout-box .order-detail-box {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+  
+  .checkout-container .checkout-box h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-container .checkout-box .contact-details,
+  .checkout-container .checkout-box .order-details {
+    margin-bottom: 20px;
+  }
+  
+  .checkout-container .checkout-box .order-details img {
+    max-width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .checkout-container .checkout-box .order-details p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .checkout-container .checkout-box .form-group label {
+    font-weight: bold;
+  }
+  
+  .checkout-container .checkout-box .form-group input[type="text"],
+  .checkout-container .checkout-box .form-group input[type="email"],
+  .checkout-container .checkout-box .form-group input[type="tel"],
+  .checkout-container .checkout-box .form-group input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .checkout-container .checkout-box .form-group .btn {
+    margin-top: 10px;
+  }
+  
+  .footer {
+    margin-top: 5%;
+  }
+.footer .container {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+.footer .row {
+    margin-top: 1%;
+  }
+.footer .row div {
+    color: white;
+  }
