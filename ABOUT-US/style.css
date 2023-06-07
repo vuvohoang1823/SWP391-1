@@ -6,6 +6,14 @@ body {
     background-color: #DDE6F1;
 }
 /*HEADER*/
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: #617A55;
+    text-decoration: none;
+}
 .header{
     padding-top: 1.6rem;
 }
@@ -23,8 +31,6 @@ body {
     margin-left: 1rem;
     font-size: 2rem;
     font-weight: 800;
-}
-.memu-section{
 }
 .menu-section .menu-content{
     padding-left: 0;
@@ -57,7 +63,7 @@ body {
     display: none;
     z-index: 1;
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     background-color: #fff;
     padding: 1rem 1rem;
     box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
@@ -72,7 +78,8 @@ body {
     width: 100%
 }
 .subnav > li:hover{
-    background-color: #E9E6E6;
+    background-color: #B7C6C2;
+    border-radius: 10px;
 }
 .auth-section{
     display: flex;
@@ -108,6 +115,19 @@ body {
 }
 .auth-section .signup:hover{
     opacity: 0.8;
+}
+.dropdown .subnav{
+    z-index: 1;
+    position: absolute;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.dropdown a {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 /*END OF HEADING*/
 .body-intro{
@@ -383,41 +403,50 @@ body {
 .card:nth-child(4) > .number{
     color: #977CF0;
 }
-.footer{
-    background-color: black;
-    margin-top: 100px;
-    height: 200px;
+footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-.footer .title{
-    color:white;
-    font-size: 30px;
-    font-weight: 500;
-}
-.footer-logo{
+    background-color: #b8c6c2;
+    margin-top: 5%;
+    height: fit-content;
+    padding: 3%;
+  }
+  footer .logo-column {
+    flex-basis: 50%;
     display: flex;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  footer .logo-column .logo-container {
+    display: flex;
+    width: fit-content;
     justify-content: center;
-    align-items: center;
-}
-.footer-logo > .logo{
-    margin-left: 24px
-}
-.footer-logo .fb{
-    width: 23.23px;
-    height: 46.46px;
-}
-.footer-logo .ins{
-    width: 46.46px;
-    height: 47.23px;
-}
-.footer-logo .ytb{
-    width: 48px;
-    height: 46px
-}
-
+  }
+  footer .logo-column .logo-container .logo-text {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  footer .logo-column .logo-container .logo-image {
+    /* flex: 0 0 100%; */
+  }
+  footer .logo-column .logo-container .logo-image img {
+    max-width: 13rem;
+    object-fit: contain;
+    object-position: center;
+  }
+  footer .column {
+    flex-basis: 16.6666666667%;
+    line-height: 200%;
+    font-size: 1.5rem;
+  }
+  footer .column .contact-info-footer p {
+    line-height: 205%;
+  }
 
 
 
