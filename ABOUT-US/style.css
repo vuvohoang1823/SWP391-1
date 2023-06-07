@@ -1,24 +1,27 @@
-
+html{
+    font-size: 10px;
+}
 body {
     font-family: 'Inter', sans-serif;
     background-color: #DDE6F1;
 }
+/*HEADER*/
 .header{
-    padding-top: 26px;
+    padding-top: 1.6rem;
 }
 .logo-section{
     display: flex;
     align-items: center;
 }
 .logo-section img{
-    width: 102px;
-    height: 64px;
-    margin-left: 41px;
+    width: 10.2rem;
+    height: 6.4rem;
+    margin-left: 4.1rem;
 }
 .logo-section p{
     margin-bottom: 0;
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 1rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 .memu-section{
@@ -26,14 +29,14 @@ body {
 .menu-section .menu-content{
     padding-left: 0;
     margin-bottom: 0;
-    margin-top: 29px;
+    margin-top: 2.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .menu-content > li{
     list-style-type: none;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
 }
 .menu-content li a{
@@ -41,40 +44,31 @@ body {
     text-decoration: none;
 }
 .menu-content li a img{
-    width: 21px;
-    height: 18px
+    width: 2.1rem;
+    height: 1.8rem
 }
 .menu-content > li:nth-child(2) a{
     color: #617A55
 }
 .menu-content > li:not(:nth-child(1)){
-    padding-left: 60px
-}
-.triangle{
-    display: none;
-    width: 0; 
-    height: 0; 
-    border-left: 17px solid transparent;
-    border-right: 17px solid transparent;
-    border-bottom: 17px solid white;
-    position: absolute;
-    top: 70px;
-    z-index: 2;
-    left: 415px
+    padding-left: 6rem
 }
 .menu-content .subnav{
     display: none;
     z-index: 1;
     position: absolute;
-    top: 80px;
+    top: 6rem;
     background-color: #fff;
-    padding: 10px 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+}
+.menu-content li:hover .subnav{
+    display: block
 }
 .subnav > li{
     list-style-type: none;
-    padding: 15px 16px;
+    padding: 1.5rem 1.6rem;
     width: 100%
 }
 .subnav > li:hover{
@@ -89,17 +83,20 @@ body {
     border-style: none;
     background-color: #DDE6F1;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2.5rem;
     color:#617A55;
     outline: none;
 }
+.auth-section .login:hover{
+    opacity: 0.8;
+}
 .auth-section .signup{
-    border-radius: 50px;
-    padding: 16px 47px;
-    margin-left: 38px;
+    border-radius: 5rem;
+    padding: 1.6rem 4.7rem;
+    margin-left: 3.8rem;
     font-weight: 700;
     color: white;
-    font-size: 25px;
+    font-size: 2.5rem;
     border-color: #617A55;
     background-color: #617A55;
     border-style: none;
@@ -109,6 +106,10 @@ body {
     border-color: #617A55;
     background-color: #617A55;
 }
+.auth-section .signup:hover{
+    opacity: 0.8;
+}
+/*END OF HEADING*/
 .body-intro{
     margin-top: 20px;
     background: rgba(97, 122, 85, 0.3);
