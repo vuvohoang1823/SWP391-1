@@ -21,37 +21,84 @@
     <link rel="stylesheet" type="text/css" href="OnlineCourse.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row header">
-          <div class="col-lg-3 logo-section">
-              <img src="assets/icon.jpg" alt="">
-              <p>BIRD <br /> TRAINING <br /> CENTER</p>
+    <div class="header-container">
+      <div style="padding-left: 2%; width: 25%">
+        <a href="/" class="nav-logo">
+          <div class="logo-container">
+            <div class="logo-image">
+              <img
+                src="../images/349252733_767865025124137_1990273265293346631_n.png"
+                alt="page logo"
+              />
+            </div>
+            <div class="logo-text">
+              <p>BIRD</p>
+              <p>TRADING</p>
+              <p>CENTER</p>
+            </div>
           </div>
-          <div class="col-lg-6 menu-section">
-              <ul class="menu-content">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li>
-                      <a href="#" class="subnav-toggle">
-                          Service
-                          <img src="assets/arrow.jpg" alt="">
-                      </a>
-                      <ul class="subnav">
-                          <li class="subnav-content"><a href="#">Workshop</a></li>
-                          <li class="subnav-content"><a href="#">Private Consultant</a></li>
-                          <li class="subnav-content"><a href="#">Online Course</a></li>
-                          <li class="subnav-content"><a href="#">Bird Course</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
-              </ul>
-          </div>
-          <div class="col-lg-3 auth-section">
-              <button class="login">Login</button>
-              <button class="signup">Sign up</button>
-          </div>
+        </a>
       </div>
+      <div class="nav-container">
+        <ul class="nav">
+          <li>
+            <a href="/home" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="/about-us" class="nav-link">About Us</a>
+          </li>
+          <li>
+            <a href="service" class="nav-link" onclick="navigate('/')"
+              >Services
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  fill="currentColor"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                  />
+                </svg>
+              </span>
+            </a>
+            <ul class="subnav">
+              <li>
+                <a href="/workshop" class="nav-link">Workshop</a>
+              </li>
+              <li>
+                <a href="/private-consultant" class="nav-link"
+                  >Private Consultant</a
+                >
+              </li>
+              <li>
+                <a href="/course-online" class="nav-link">Course Online</a>
+              </li>
+              <li>
+                <a href="/bird-course" class="nav-link">Bird Course</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/blog" class="nav-link">Blog</a>
+          </li>
+          <li>
+            <a href="/contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="button-container">
+        <button class="signup-button" onclick="toggleSignUpForm()">
+          Sign Up
+        </button>
+        <button class="signin-button" onclick="toggleSignInForm()">
+          <p>Log In</p>
+        </button>
+      </div>
+    </div>
     <!-- end of header -->
     <div class="body-container">
       <section class="section-head">
