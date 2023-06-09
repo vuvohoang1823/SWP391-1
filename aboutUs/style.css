@@ -7,7 +7,8 @@ body {
 }
 /*HEADER*/
 .header{
-    padding-top: 1.6rem;
+    padding: 1.6rem 0;
+    background-color: #617a554d
 }
 .logo-section{
     display: flex;
@@ -29,7 +30,7 @@ body {
 .menu-section .menu-content{
     padding-left: 0;
     margin-bottom: 0;
-    margin-top: 2.9rem;
+    margin-top: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +39,7 @@ body {
     list-style-type: none;
     font-size: 2rem;
     font-weight: 700;
+    padding-bottom: 2rem;
 }
 .menu-content li a{
     color: #000000;
@@ -53,17 +55,29 @@ body {
 .menu-content > li:not(:nth-child(1)){
     padding-left: 6rem
 }
+.triangle{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    top: 4.6rem;
+    margin-left: 8rem;
+    width:0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid white;
+}
 .menu-content .subnav{
     display: none;
     z-index: 1;
     position: absolute;
-    top: 6rem;
+    top: 5.6rem;
     background-color: #fff;
     padding: 1rem 1rem;
     box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 1rem
 }
-.menu-content li:hover .subnav{
+.menu-content li:hover .subnav, .menu-content li:hover .triangle{
     display: block
 }
 .subnav > li{
@@ -81,7 +95,7 @@ body {
 }
 .auth-section .login{
     border-style: none;
-    background-color: #DDE6F1;
+    background-color: transparent;
     font-weight: 700;
     font-size: 2.5rem;
     color:#617A55;
@@ -111,7 +125,6 @@ body {
 }
 /*END OF HEADING*/
 .body-intro{
-    margin-top: 2rem;
     background: rgba(97, 122, 85, 0.3);
     height: calc(57.6rem + 12rem)
 }
@@ -135,7 +148,7 @@ body {
     margin-top: 6.6rem
 }
 .content-section .title{
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     font-weight: 700;
     color:#617A55;
     font-size: 3rem;
@@ -169,8 +182,9 @@ body {
 .bullet-point .top p, .bullet-point .bottom p{
     font-weight: 700;
     font-size: 2.5rem;
-    margin-top: -0.4rem;
+    margin-top: 0.2rem;
     margin-left: 1.5rem;
+    margin-bottom: 4rem
 }
 .body-ourteam .title{
     margin-bottom: 0;
@@ -207,7 +221,7 @@ body {
 .trainer > .name{
     font-weight: 700;
     font-size: 4rem;
-    margin: 0 
+    margin-top: 2rem 
 }
 .trainer:nth-child(1) > .name{
     font-weight: 700;
@@ -230,6 +244,7 @@ body {
     color: #977CF0;
 }
 .trainer > .role{
+    margin-top:1rem;
     font-weight: 400;
     font-size: 2.5rem;
 }
@@ -246,18 +261,25 @@ body {
     font-weight: 700;
     color: #617A55;
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 .why-content .sub-title{
     color: black;
     font-weight: 800;
     font-size: 6rem;
+    line-height: 7.26rem;
+    margin-bottom: 3rem;
 }
 .why-content .content{
     font-weight: 400;
     font-size: 2rem;
+    line-height: 2.42rem;
 }
 .percentage{
     margin-top: 5rem
+}
+.goal{
+    margin-bottom: 2.5rem;
 }
 .goal > p{
     font-weight: 700;
@@ -276,7 +298,7 @@ body {
 }
 .fill-75 p{
     font-size: 2rem;
-    padding: 0.1rem 0;
+    padding-top: 0.5rem;
     margin-left: 48rem
 }
 .guarantee > p{
@@ -296,7 +318,7 @@ body {
 }
 .fill-100 p{
     font-size: 2rem;
-    padding: 0.1rem 0;
+    padding-top: 0.5rem;
     margin-left: 64.32rem
 }
 .why-images{
@@ -341,6 +363,7 @@ body {
     font-weight: 700;
     font-size: 3rem;
     color: #617A55;
+    margin-bottom: 1rem;
 }
 .body-result .sub-title{
     text-align: center;
@@ -361,14 +384,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.card > .number{
-    margin-top: 1.6rem;
-}
+
 .card > .number{
     font-size: 5rem;
     font-weight: 800;
+    margin-top: 7rem;
 }
 .card > .desc{
+    margin-top: 2rem;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
@@ -412,6 +435,7 @@ footer .logo-column .logo-container .logo-text {
     text-decoration: none;
     font-weight: bold;
     font-size: 3rem;
+    margin-left: 2rem;
 }
 footer .logo-column .logo-container .logo-image {
     /* flex: 0 0 100%; */
