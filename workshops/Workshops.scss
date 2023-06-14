@@ -1,3 +1,7 @@
+html {
+  font-size: 10px;
+}
+
 $background-color: #dde6f1;
 $green: #80957c;
 $green-hover: #4d6144;
@@ -18,148 +22,6 @@ $border-radius: 15px;
   text-decoration: none;
   list-style: none;
 }
-.header-container {
-  z-index: 1000;
-  position: relative;
-  background-color: $background-color;
-  height: 7vh;
-  min-height: 70px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  .nav-link.active {
-    color: $green;
-  }
-
-  .logo-text,
-  .nav-link,
-  .nav-logo {
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .logo-container {
-    display: flex;
-    width: 20%;
-    .logo-image {
-      flex: 0 0 100%;
-      img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
-      }
-    }
-  }
-
-  .nav-container {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    .nav {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      li {
-        position: relative;
-        height: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-        height: 100%;
-        transition: background-color 0.1s linear;
-
-        &:hover {
-          // background-color: #468847;
-          .nav-link {
-            color: $green-hover;
-          }
-          .subnav {
-            display: block;
-          }
-        }
-        .nav-link {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-        }
-        .subnav {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          right: 0;
-          box-shadow: 0 0 10px grey;
-          line-height: 200%;
-          li {
-            padding: 0;
-            padding-left: 7%;
-            background-color: white;
-            width: 100%;
-            &:hover {
-              background-color: #468847;
-              .subnav {
-                display: flex;
-              }
-            }
-          }
-          .nav-link {
-            color: black;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .button-container {
-    width: 25%;
-    padding-right: 5%;
-    .signin-button {
-      float: right;
-      border: none;
-      background-color: rgba(0, 0, 0, 0);
-      min-width: 100px;
-      height: 35px;
-      font-size: 1.1em;
-      color: $green;
-      cursor: pointer;
-
-      &:hover {
-        color: #617a55;
-      }
-
-      @media screen and (max-width: 500px) {
-        right: 15px;
-      }
-    }
-    .signup-button {
-      float: right;
-      background-color: #617a55;
-      border-radius: 30px;
-      min-width: 100px;
-      height: 35px;
-      font-size: 1.1em;
-      color: white;
-      border: 0;
-      cursor: pointer;
-
-      &:hover {
-        background-color: #468847;
-      }
-
-      @media screen and (max-width: 500px) {
-        right: 15px;
-      }
-    }
-  }
-}
 //end of header
 
 .body-container {
@@ -173,7 +35,7 @@ $border-radius: 15px;
         h1 {
           color: black;
           font-weight: bolder;
-          font-size: 90px;
+          font-size: 5rem;
           font-weight: $bolding;
           width: 70%;
         }
@@ -191,57 +53,90 @@ $border-radius: 15px;
     display: flex;
     justify-content: center;
     background-color: $grey;
-    padding-bottom: 2%;
-    .img-container {
-      width: 50%;
-      margin-right: 3%;
-      display: flex;
-      img {
-        margin-right: 5%;
-        border-radius: 4%;
-        width: 45%;
-      }
-    }
     .desc-container {
-      width: 50%;
-      margin-right: 5%;
-      margin-top: 5%;
-      margin-left: 3%;
+      width: 50vw;
+      padding: 4rem 5rem 4rem 4rem;
       h2 {
         color: $green-hover;
         font-weight: bold;
-        font-size: $title-font-size;
+        font-size: 2rem;
       }
       h1 {
         color: black;
         font-weight: bolder;
-        font-size: 80px;
+        font-size: 4rem;
       }
       p {
-        width: 70%;
+        line-height: 3rem;
         margin-top: 3%;
         font-size: $text-font-size;
       }
       .button-container {
+        padding-top: 3rem;
         font-weight: bold;
-        margin-top: 7%;
-        font-size: 28px;
+        font-size: 2.5rem;
         button {
           border: 0px;
           border-radius: 50px;
           background-color: #617a55;
           color: white;
-          padding: 20px;
-          width: 40%;
+          padding: 1rem 1rem;
+          width: 50%;
+        }
+      }
+    }
+    .img-container {
+      max-height: 50rem;
+      width: 50vw;
+      display: flex;
+      justify-content: center;
+      .image1 {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%;
+        img {
+          border-radius: 20px;
+          height: 100%;
+          max-height: fit-content;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      .image2 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 4rem;
+        img {
+          border-radius: 20px;
+          height: 100%;
+          max-height: fit-content;
+          object-fit: contain;
+          object-position: center;
         }
       }
     }
   }
   .section-body {
-    .container {
-      margin-top: 1%;
+    .searchbar-container {
+      padding: 0;
+      padding-top: 2rem;
+      .input-group {
+        height: 4rem;
+        input {
+          font-size: 2rem;
+          height: 100%;
+        }
+      }
       .dropdown {
-        line-height: 150%;
+        height: 4rem;
+        line-height: 2.5rem;
+        button {
+          font-size: 2rem;
+          height: 100%;
+        }
+        .dropdown-menu {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -262,29 +157,36 @@ $border-radius: 15px;
           height: 100%;
           line-height: 150%;
           .card-title {
-            font-size: 20px;
+            font-size: 3rem;
+            width: 70%;
             font-weight: bold;
-            color: $greenText;
+            color: #617a55;
+          }
+          .desc-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          .card-text {
+            padding-top: 3rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
           }
           .extra-price {
+            padding-top: 1.5rem;
             width: 100%;
-            position: absolute;
-            bottom: 0;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
 
             .button-container {
-              width: 80%;
+              width: 40%;
               font-weight: bold;
               font-size: 18px;
               button {
                 border: 0px;
-                border-radius: 10px;
+                border-radius: 15px;
                 background-color: #f69c14;
                 color: white;
-                padding: 5px;
-                width: 50%;
+                padding: 1.5rem 5rem;
               }
             }
             p {
@@ -293,25 +195,26 @@ $border-radius: 15px;
               margin-right: 10%;
               font-size: 20px;
               font-weight: bold;
-              color: $greenText;
+              color: #617a55;
             }
           }
         }
       }
     }
-  }
-}
-//end of body
-.footer {
-  margin-top: 5%;
-  .container {
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-  .row {
-    margin-top: 1%;
-    div {
-      color: white;
+    .foot-button {
+      padding-top: 3rem;
+      display: flex;
+      justify-content: center;
+      button {
+        width: 90%;
+        border: 0;
+        border-radius: 30px;
+        color: white;
+        background-color: #617a55;
+        padding: 0.7rem 0.7rem;
+        font-weight: bold;
+        font-size: 3rem;
+      }
     }
   }
 }

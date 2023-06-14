@@ -29,22 +29,23 @@
   font-weight: bold;
 }
 .header-container .logo-container {
+  width: 100%;
   display: flex;
-  width: 20%;
-}
-.header-container .logo-container .logo-image {
-  flex: 0 0 100%;
 }
 .header-container .logo-container .logo-image img {
-  height: 100%;
+  height: 50px;
+  min-width: none;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }
-.header-container .nav-container {
+.header-container .logo-container .logo-text {
   width: 50%;
+}
+.header-container .nav-container {
+  width: 55%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -59,9 +60,8 @@
 .header-container .nav-container .nav li {
   position: relative;
   height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
   transition: background-color 0.1s linear;
 }
 .header-container .nav-container .nav li:hover .nav-link {

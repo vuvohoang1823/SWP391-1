@@ -1,0 +1,163 @@
+html {
+  font-size: 5px;
+}
+
+.section-contactUs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+.section-contactUs * {
+  box-sizing: border-box;
+}
+.section-contactUs .left {
+  background-color: green;
+  color: white;
+  width: 50vw;
+}
+.section-contactUs .left .heading {
+  display: flex;
+  flex-direction: column;
+}
+.section-contactUs .left .heading h1 {
+  padding-top: 6rem;
+  align-self: center;
+  font-size: 7rem;
+}
+.section-contactUs .left .heading hr {
+  margin-top: 2rem;
+  width: 50%;
+}
+.section-contactUs .left .icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.section-contactUs .left .icons span {
+  padding: 1rem 1rem;
+}
+.section-contactUs .left .icons span svg {
+  width: 6rem;
+  height: 6rem;
+}
+.section-contactUs .left .content {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 5rem;
+}
+.section-contactUs .left .content div {
+  font-size: 3rem;
+  align-self: center;
+}
+.section-contactUs .left .card {
+  width: 48rem;
+  margin: 10rem auto 3rem auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.section-contactUs .left .card .image-container {
+  padding: 2rem;
+}
+.section-contactUs .left .card .image-container img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 4px 4px 0 0;
+}
+.section-contactUs .left .card .card-body {
+  border-radius: 2rem;
+  display: flex;
+  padding: 0 2rem 2rem 2rem;
+}
+.section-contactUs .left .card .card-body .text-field {
+  flex: 1;
+  padding: 8px;
+  height: 7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  width: 70%;
+}
+.section-contactUs .left .card .card-body .button {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 2rem;
+  width: 30%;
+  padding: 8px 16px;
+  background-color: #f69c14;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.section-contactUs .right {
+  width: 50vw;
+  background-color: #b8c6c2;
+  padding: 6rem 5rem;
+}
+.section-contactUs .right .form-container {
+  border: 0.3rem solid white;
+  padding-bottom: 7rem;
+}
+.section-contactUs .right .form-container .heading {
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.section-contactUs .right .form-container .heading .logo-container {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+}
+.section-contactUs .right .form-container .heading .logo-container .logo-image {
+  padding: 0 2rem;
+}
+.section-contactUs .right .form-container .heading .logo-container .logo-image img {
+  width: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.section-contactUs .right .form-container .heading .logo-container .logo-text {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3.3rem;
+}
+.section-contactUs .right .form-container .heading h1 {
+  padding-top: 2.5rem;
+  color: #617a55;
+  align-self: center;
+  font-size: 6rem;
+}
+.section-contactUs .right .form-container .content {
+  padding: 0 15%;
+}
+.section-contactUs .right .form-container .content .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.section-contactUs .right .form-container .content .row input,
+.section-contactUs .right .form-container .content .row textarea {
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1.8rem 1.5rem;
+  width: 100%;
+}
+.section-contactUs .right .form-container .button-container {
+  display: flex;
+  justify-content: center;
+}
+.section-contactUs .right .form-container .button-container button {
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0.7rem;
+  background-color: #617a55;
+  color: white;
+  padding: 2rem 5rem;
+}/*# sourceMappingURL=homepage.css.map */

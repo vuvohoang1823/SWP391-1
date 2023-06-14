@@ -1,0 +1,329 @@
+html {
+  font-size: 10px;
+}
+
+section {
+  .heading {
+    text-align: center;
+    div {
+      margin-top: 2%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        width: 70%;
+      }
+    }
+    h2 {
+      margin-top: 4%;
+      font-size: 20px;
+      font-weight: bold;
+      color: #617a55;
+    }
+  }
+}
+.birdCourse-container {
+  .section-course {
+    margin-top: 2%;
+    .card {
+      margin: 0 auto;
+      width: 90%;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 15px;
+    }
+
+    .card-img-top {
+      aspect-ratio: 1/1;
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      position: relative;
+      .extra-price {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .button-container {
+          width: 80%;
+          font-weight: bold;
+          button {
+            font-size: 2rem;
+            border: 0px;
+            border-radius: 15px;
+            background-color: #f69c14;
+            color: white;
+            padding: 5px;
+            width: 50%;
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: #308209;
+        }
+      }
+      .card-title {
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2rem;
+        margin-top: 15%;
+        font-size: 2.5rem;
+      }
+      .course-name {
+        font-size: 2rem;
+        text-align: center;
+        color: #6a914a;
+        font-style: italic;
+      }
+      .card-text {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .review {
+        display: flex;
+        align-items: center;
+        .star {
+          font-size: 1.5rem;
+          margin-right: 5px;
+        }
+        .review-count {
+          font-size: 1.5rem;
+          margin-left: auto;
+        }
+      }
+    }
+    .foot-button {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 90%;
+        border: 0;
+        border-radius: 30px;
+        color: white;
+        background-color: #617a55;
+        padding: 0.7rem 0.7rem;
+        font-weight: bold;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+.onlineCourse-container {
+  .section-course {
+    margin-top: 2%;
+    .card {
+      margin: 0 auto;
+      width: 90%;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 15px;
+    }
+
+    .card-img-top {
+      aspect-ratio: 1/1;
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      position: relative;
+      .extra-price {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .button-container {
+          width: 80%;
+          font-weight: bold;
+          button {
+            font-size: 2rem;
+            border: 0px;
+            border-radius: 10px;
+            background-color: #f69c14;
+            color: white;
+            padding: 5px;
+            width: 50%;
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: #617a55;
+        }
+      }
+      .card-title {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15%;
+        font-size: 2.5rem;
+      }
+      .card-text {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+      }
+      .review {
+        display: flex;
+        align-items: center;
+        .star {
+          font-size: 1.5rem;
+          margin-right: 5px;
+        }
+        .review-count {
+          font-size: 1.5rem;
+          margin-left: auto;
+        }
+      }
+    }
+    .foot-button {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 90%;
+        border: 0;
+        border-radius: 30px;
+        color: white;
+        background-color: #617a55;
+        padding: 0.7rem 0.7rem;
+        font-weight: bold;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+.workshops-container {
+  .section-workshops {
+    .row {
+      justify-content: center;
+      .card {
+        border-radius: 15px;
+        margin-top: 5%;
+        padding: 3%;
+        .card-img {
+          border-radius: 7%;
+        }
+        .card-body {
+          position: relative;
+          padding-top: 0;
+          padding-bottom: 0;
+          height: 100%;
+          line-height: 150%;
+          .card-title {
+            font-size: 3rem;
+            width: 70%;
+            font-weight: bold;
+            color: #617a55;
+          }
+          .desc-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+          .card-text {
+            padding-top: 3rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
+          }
+          .extra-price {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+
+            .button-container {
+              width: 40%;
+              font-weight: bold;
+              font-size: 18px;
+              button {
+                border: 0px;
+                border-radius: 15px;
+                background-color: #f69c14;
+                color: white;
+                padding: 1.5rem 5rem;
+              }
+            }
+            p {
+              display: flex;
+              align-items: center;
+              margin-right: 10%;
+              font-size: 20px;
+              font-weight: bold;
+              color: #617a55;
+            }
+          }
+        }
+      }
+    }
+    .foot-button {
+      padding-top: 3rem;
+      display: flex;
+      justify-content: center;
+      button {
+        width: 90%;
+        border: 0;
+        border-radius: 30px;
+        color: white;
+        background-color: #617a55;
+        padding: 0.7rem 0.7rem;
+        font-weight: bold;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+.service-container {
+  .service-body {
+    .row {
+      .image-container {
+      }
+      .description-container {
+        text-align: center;
+        background-color: #b8c6c2;
+        .header {
+          padding-top: 4rem;
+          font-weight: bold;
+          font-size: 2.2rem;
+        }
+        .description {
+          font-size: 2rem;
+          padding: 2rem 2.5rem;
+        }
+        .button-container {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+          button {
+            font-size: 1.5rem;
+            border: 0;
+            border-radius: 20px;
+            background-color: #617a55;
+            color: white;
+            padding: 1rem 3rem;
+          }
+        }
+      }
+    }
+  }
+}
