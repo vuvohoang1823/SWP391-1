@@ -100,7 +100,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /* font-size: 100%; */
   vertical-align: baseline;
 }
 
@@ -118,7 +118,10 @@ nav,
 section {
   display: block;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 body {
   line-height: 1;
   box-sizing: border-box;
