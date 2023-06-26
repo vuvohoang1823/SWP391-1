@@ -1,200 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../reset.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
-    <header style="height: 7rem; background-color: red">abc</header>
-    <div class="body-container">
-      <section class="section-head">
-        <div class="desc-container">
-          <h2>PRIVATE CONSULTANT</h2>
-          <h1>Expert Guidance for Personal and Professional Success</h1>
-          <p>
-            Our Private Consultant UI offers personalized and tailored guidance
-            to help you achieve your personal and professional goals. Whether
-            you're seeking career advice, business strategy, or personal
-            development, our experienced consultants are here to provide
-            valuable insights and support.
-          </p>
-          <div class="button-container">
-            <button>Explore Workshops</button>
-          </div>
-        </div>
-        <div class="img-container">
-          <div class="image1">
-            <img src="./assets/pc.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="section-services">
-        <div class="heading">
-          <h2>CONSULTATION SERVICES</h2>
-          <div>
-            <h1>Available Consultations Service</h1>
-          </div>
-        </div>
-        <div
-          id="carouselContainer"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselContainer"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselContainer"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselContainer"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/parrot.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="card-title">Foundation and Basic Training</h5>
-                <p class="card-text">
-                  Our Foundation and Basic Training service is designed to
-                  provide you with the fundamental skills and knowledge needed
-                  to excel in your personal and professional endeavors. Led by
-                  our expert consultants, this service focuses on establishing a
-                  solid framework that sets the stage for long-term success.
-                  During these sessions, you will dive into essential topics
-                  such as goal setting, effective communication, time
-                  management, and problem-solving techniques. Our consultants
-                  will guide you through practical exercises and provide
-                  valuable insights to help you develop a strong foundation for
-                  growth.
-                </p>
-                <div class="button-container">
-                  <a href="formAppointment.jsp">
-                    <button class="card-contact">Contact us to book</button>
-                  </a>
-                </div>
-              </div>
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-lg-3 logo-section">
+                <img src="assets/icon.jpg" alt="">
+                <p>BIRD <br /> TRAINING <br /> CENTER</p>
             </div>
-            <div class="carousel-item">
-              <img src="./assets/parrot.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="card-title">Behaviour Modification Sessions</h5>
-                <p class="card-text">
-                  Our Foundation and Basic Training service is designed to
-                  provide you with the fundamental skills and knowledge needed
-                  to excel in your personal and professional endeavors. Led by
-                  our expert consultants, this service focuses on establishing a
-                  solid framework that sets the stage for long-term success. Our
-                  Behavior Modification Sessions offer targeted support for
-                  individuals seeking to modify and transform their behaviors.
-                  Led by our skilled consultants, these sessions provide a safe
-                  and confidential space to address and modify negative
-                  patterns, fostering personal growth and empowering you to make
-                  lasting positive changes.
-                </p>
+            <div class="col-lg-6 menu-section">
+                <ul class="menu-content">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li>
+                        <a href="#" class="subnav-toggle">
+                            Service
+                            <img src="assets/arrow.jpg" alt="">
+                        </a>
+                        <div class="triangle"></div>
+                        <ul class="subnav">
+                            <li class="subnav-content"><a href="#">Workshop</a></li>
+                            <li class="subnav-content"><a href="#">Private Consultant</a></li>
+                            <li class="subnav-content"><a href="#">Online Course</a></li>
+                            <li class="subnav-content"><a href="#">Bird Course</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="col-lg-3 auth-section">
+                <li>Welcome</li>
+                <li class="user">
+                    <div class="user-display">
+                        <svg width="19" height="26" viewBox="0 0 19 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 0.00173437C8.6944 -0.017608 7.89308 0.125002 7.14317 0.421175C6.39327 0.717349 5.70993 1.1611 5.13335 1.72634C4.55677 2.29157 4.09859 2.96687 3.78576 3.71251C3.47294 4.45815 3.31179 5.25908 3.31179 6.06817C3.31179 6.87726 3.47294 7.67819 3.78576 8.42383C4.09859 9.16947 4.55677 9.84476 5.13335 10.41C5.70993 10.9752 6.39327 11.419 7.14317 11.7152C7.89308 12.0113 8.6944 12.1539 9.5 12.1346C10.3056 12.1539 11.1069 12.0113 11.8568 11.7152C12.6067 11.419 13.2901 10.9752 13.8667 10.41C14.4432 9.84476 14.9014 9.16947 15.2142 8.42383C15.5271 7.67819 15.6882 6.87726 15.6882 6.06817C15.6882 5.25908 15.5271 4.45815 15.2142 3.71251C14.9014 2.96687 14.4432 2.29157 13.8667 1.72634C13.2901 1.1611 12.6067 0.717349 11.8568 0.421175C11.1069 0.125002 10.3056 -0.017608 9.5 0.00173437ZM6.04545 15.5997C4.4421 15.5997 2.90442 16.2392 1.77067 17.3775C0.63693 18.5158 0 20.0597 0 21.6696V26H19V21.6696C19 20.0597 18.3631 18.5158 17.2293 17.3775C16.0956 16.2392 14.5579 15.5997 12.9545 15.5997H6.04545Z"
+                                fill="white" />
+                        </svg>
+                        <p class="username">Namvippro</p>
+                        <svg class="pic2" width="18" height="12" viewBox="0 0 18 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L0 0H18L9 12Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="sub">
+                        <div class="triangle"></div>
+                        <ul class="subnav">
+                            <li class="subnav-content"><a href="#">View Booked Service</a></li>
+                            <li class="subnav-content"><a href="#">View Profile</a></li>
+                            <li class="subnav-content"><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- END OF HEADER -->
+        <div class="row body-cst">
+            <div class="col-lg-7 body-content">
+                <p class="title">PRIVATE CONSULTANT</p>
+                <p class="subtitle">Expert Guidance for Personal and Professional Success</p>
+                <p class="content">Our Private Consultant UI offers personalized and tailored guidance to help you
+                    achieve your personal
+                    and professional goals. Whether you're seekisng career advice, business strategy, or personal
+                    development, our experienced consultants are here to provide valuable insights and support.</p>
+                <div class="button">
+                    <a href="#choice">Explore Choice</a>
+                </div>
+            </div>
+            <div class="col-lg-5 body-img">
+                <img src="assets/pc.jpg" alt="">
+            </div>
+        </div>
+        <p id="choice" class="body-services">Available Consultation Service</p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-                <div class="button-container">
-                  <a href="formAppointment.jsp">
-                    <button class="card-contact">Contact us to book</button>
-                  </a>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-background">
+                        <img src="assets/parrot.jpg" alt="Slide 1">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Foundation and Basic Training</h5>
+                                            <p class="card-text">Our Foundation and Basic Training service is designed
+                                                to provide you with the fundamental skills and knowledge needed to excel
+                                                in your personal and professional endeavors. Led by our expert
+                                                consultants, this service focuses on establishing a solid framework that
+                                                sets the stage for long-term success.
+                                                During these sessions, you will dive into essential topics such as goal
+                                                setting, effective communication, time management, and problem-solving
+                                                techniques. Our consultants will guide you through practical exercises
+                                                and provide valuable insights to help you develop a strong foundation
+                                                for growth.
+                                            </p>
+                                            <button class="card-contact">Contact us to book</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="carousel-item">
+                    <div class="carousel-background">
+                        <img src="assets/parrot.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Behaviour Modification Sessions
+                                            </h5>
+                                            <p class="card-text">Our Foundation and Basic Training service is designed
+                                                to provide you with the fundamental skills and knowledge needed to excel
+                                                in your personal and professional endeavors. Led by our expert
+                                                consultants, this service focuses on establishing a solid framework that
+                                                sets the stage for long-term success.
+                                                Our Behavior Modification Sessions offer targeted support for
+                                                individuals seeking to modify and transform their behaviors. Led by our
+                                                skilled consultants, these sessions provide a safe and confidential
+                                                space to address and modify negative patterns, fostering personal growth
+                                                and empowering you to make lasting positive changes.
+                                            </p>
+                                            <button class="card-contact">Contact us to book</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-background">
+                        <img src="assets/parrot.jpg" alt="Slide 3">
+                    </div>
+                    <div class="carousel-content">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Novel / Trick Training Sessions
+                                            </h5>
+                                            <p class="card-text">Our Novel/Trick Training Sessions offer a fun and
+                                                innovative approach to training, allowing you to unlock your creativity
+                                                and deepen the bond with your feathered friends. Led by our skilled
+                                                consultants, these sessions focus on teaching your birds unique and
+                                                engaging tricks that will leave everyone amazed.
+                                                In these sessions, you will learn a variety of tricks and novel
+                                                behaviors that go beyond the basics. From fetching objects to performing
+                                                acrobatics, our consultants will guide you step-by-step, providing tips,
+                                                techniques, and troubleshooting advice to help you achieve impressive
+                                                results.
+                                            </p>
+                                            <button class="card-contact">Contact us to book</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img src="./assets/parrot.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="card-title">Novel / Trick Training Sessions</h5>
-                <p class="card-text">
-                  Our Novel/Trick Training Sessions offer a fun and innovative
-                  approach to training, allowing you to unlock your creativity
-                  and deepen the bond with your feathered friends. Led by our
-                  skilled consultants, these sessions focus on teaching your
-                  birds unique and engaging tricks that will leave everyone
-                  amazed. In these sessions, you will learn a variety of tricks
-                  and novel behaviors that go beyond the basics. From fetching
-                  objects to performing acrobatics, our consultants will guide
-                  you step-by-step, providing tips, techniques, and
-                  troubleshooting advice to help you achieve impressive results.
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p class="body-testimonial">Testimonial</p>
+        <p class="body-tc">WHAT OUR CLIENT SAY</p>
+        <div class="row client">
+            <div class="client-card">
+                <img src="assets/kygo.jpg" alt="">
+                <p class="name">Kyrre Gørvell-Dahll</p>
+                <p class="response">I really enjoyed the bird handling<br /> session. The instructor's expertise
+                    and<br /> guidance
+                    helped me gain confidence in<br /> handling the birds. I appreciated the<br /> hands-on approach
+                    and
+                    the
+                    emphasis<br /> on safety throughout the training.
                 </p>
-                <div class="button-container">
-                  <a href="formAppointment.jsp">
-                    <button class="card-contact">Contact us to book</button>
-                  </a>
+            </div>
+            <div class="client-card">
+                <img src="assets/martin.jpg" alt="">
+                <p class="name">Martin Garrix</p>
+                <p class="response">The bird behavior and communication<br /> course exceeded my expectations.
+                    The<br />
+                    instructor's in-depth knowledge and<br /> ability to explain complex concepts<br /> made it easy
+                    to
+                    understand
+                    how birds<br /> communicate
+                </p>
+            </div>
+            <div class="client-card">
+                <img src="assets/tiesto.jpg" alt="">
+                <p class="name">Quinten van den Berg</p>
+                <p class="response">I want to express my gratitude for the<br /> bird training techniques course.
+                    The<br />
+                    trainer's patience and positive<br /> reinforcement methods created a<br /> supportive learning
+                    environment.
+                </p>
+            </div>
+        </div>
+        <footer class="row footer-container">
+            <div class="logo-column">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="assets/icon.jpg" alt="page logo" />
+                    </div>
+                    <div class="logo-text">
+                        <p>BIRD</p>
+                        <p>TRAINING</p>
+                        <p>CENTER</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselContainer"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselContainer"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <section class="section-consultants">
-        <div class="heading">
-          <h2>OUR CONSULTANTS</h2>
-          <div>
-            <h1>Expert Guidance for Bird Training Success</h1>
-          </div>
-        </div>
-        <div class="cards-container row">
-          <div class="card-container">
-            <img src="assets/kygo.jpg" alt="" />
-            <div class="desc-container">
-              <div class="name">Kyrre Gørvell-Dahll</div>
-              <div class="skills">Avian Behaviour and Training Consultant</div>
-              <div class="button-container">
-                <a href="">
-                  <button>Book now</button>
-                </a>
-              </div>
+            <div class="column">
+                <b>Company</b>
+                <div>
+                    <p>Blog</p>
+                    <p>How it works</p>
+                    <p>Terms</p>
+                    <p>Private Policy</p>
+                </div>
             </div>
-          </div>
-          <!-- card end -->
-        </div>
-      </section>
+            <div class="column">
+                <b>About Us</b>
+                <div>
+                    <p>Who we are</p>
+                    <p>Feature</p>
+                    <p>News letter</p>
+                    <p>Career</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="contact-footer">
+                    <b>Contact</b>
+                </div>
+                <div class="contact-info-footer">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <a href="https://goo.gl/maps/iJKqgfYQEe9kxWV28" style="text-decoration: none; color: black;">FPT
+                            University</a>
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        0123 456 789
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                        <a>
+                            xxx@xxx.com.vn
+                        </a>
+
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <a href="https://www.facebook.com/angrybirds2/" style="text-decoration: none; color: black;">
+                            BirdTC
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script>
+
+        // Wait for the document to load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the carousel element
+            var carousel = document.getElementById("myCarousel");
+
+            // Get the carousel inner element
+            var carouselInner = carousel.querySelector(".carousel-inner");
+
+            // Get the carousel items
+            var carouselItems = carouselInner.querySelectorAll(".carousel-item");
+
+            // Get the previous and next buttons
+            var prevButton = document.querySelector(".carousel-control-prev");
+            var nextButton = document.querySelector(".carousel-control-next");
+
+            // Set initial slide index
+            var currentSlide = 0;
+
+            // Handle the click event on the previous button
+            prevButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                currentSlide--;
+                if (currentSlide < 0) {
+                    currentSlide = carouselItems.length - 1;
+                }
+                updateSlide();
+            });
+
+            // Handle the click event on the next button
+            nextButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                currentSlide++;
+                if (currentSlide >= carouselItems.length) {
+                    currentSlide = 0;
+                }
+                updateSlide();
+            });
+
+            // Function to update the active slide
+            function updateSlide() {
+                for (var i = 0; i < carouselItems.length; i++) {
+                    if (i === currentSlide) {
+                        carouselItems[i].classList.add("active");
+                    } else {
+                        carouselItems[i].classList.remove("active");
+                    }
+                }
+            }
+        });
+
+
+    </script>
+</body>
+
 </html>
