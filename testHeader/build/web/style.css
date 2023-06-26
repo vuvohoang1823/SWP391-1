@@ -1,0 +1,131 @@
+html{
+        font-size: 10px;
+    }
+body {
+        font-family: 'Inter', sans-serif;
+        background-color: #DDE6F1;
+}
+/*HEADER*/
+.header{
+        padding: 1.6rem 0;
+        background-color: #617a554d
+    }
+    .logo-section{
+        display: flex;
+        align-items: center;
+    }
+    .logo-section img{
+        width: 10.2rem;
+        height: 6.4rem;
+        margin-left: 4.1rem;
+    }
+    .logo-section p{
+        margin-bottom: 0;
+        margin-left: 1rem;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .memu-section{
+    }
+    .menu-section .menu-content{
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 2.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-content > li{
+        list-style-type: none;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+    .menu-content li a{
+        color: #000000;
+        text-decoration: none;
+    }
+    .menu-content li a img{
+        width: 2.1rem;
+        height: 1.8rem
+    }
+    .menu-content > li:nth-child(2) a{
+        color: #617A55
+    }
+    .menu-content > li:not(:nth-child(1)){
+        padding-left: 6rem
+    }
+    .triangle{
+        display:none;
+        position: absolute;
+        z-index: 2;
+        top: 6rem;
+        margin-left: 8.2rem;
+        width:0;
+        height: 0;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid white;
+    }
+    .menu-content .subnav{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 6.9rem;
+        background-color: #fff;
+        padding: 1rem 1rem;
+        box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+        border-radius: 1rem
+    }
+    .menu-content li:hover .subnav, .menu-content li:hover .triangle{
+        display: block
+    }
+    .subnav > li{
+        list-style-type: none;
+        padding: 1.5rem 1.6rem;
+        width: 100%
+    }
+    .subnav > li:hover{
+        background-color: #E9E6E6;
+    }
+    .auth-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .auth-section .login{
+        border-style: none;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 2.5rem;
+        color:#617A55;
+        outline: none;
+    }
+    .login a{
+        color:#617A55;
+    }
+    .auth-section .login:hover{
+        opacity: 0.8;
+    }
+    .auth-section .signup{
+        border-radius: 5rem;
+        padding: 1.6rem 4.7rem;
+        margin-left: 2rem;
+        font-weight: 700;
+        color: white;
+        font-size: 2.5rem;
+        border-color: #617A55;
+        background-color: #617A55;
+        border-style: none;
+        outline: #617A55;
+    }
+    .auth-section .signup:focus{
+        border-color: #617A55;
+        background-color: #617A55;
+    }
+    .auth-section .signup:hover{
+        opacity: 0.8;
+    }
+    .signup a{
+        color: white;   
+    }
