@@ -1,0 +1,171 @@
+/*chỉnh màu onClick cho navigation ở dòng 56, subnavigation ở dòng 92*/
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #DDE6F1;
+
+}
+/*HEADER*/
+.header{
+    padding: 1.6rem 0;
+    background-color: #627b564d;
+
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.logo-section img{
+    width: 10.2rem;
+    height: 6.4rem;
+    margin-left: 4.1rem;
+}
+.logo-section p{
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.memu-section{
+}
+.menu-section .menu-content{
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content > li{
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+.menu-content li a{
+    color: #000000;
+    text-decoration: none;
+}
+.menu-content li a img{
+    width: 2.1rem;
+    height: 1.8rem
+}
+/*chỉnh màu onCick cho navigation trong nth-child()*/
+.menu-content > li:nth-child(3) > a{
+    color: #617A55
+}
+.menu-content > li:not(:nth-child(1)){
+    padding-left: 6rem
+}
+.menu-content .triangle{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    top: 4.6rem;
+    margin-left: 8rem;
+    width:0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid white;
+}
+.menu-content .subnav{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 5.6rem;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem
+}
+.menu-content li:hover .subnav, .menu-content li:hover .triangle{
+    display: block
+}
+.menu-content .subnav > li{
+    list-style-type: none;
+    padding: 1.5rem 1.6rem;
+    width: 100%
+}
+/*chỉnh màu onCLick cho subnav trong nth-child()*/
+.menu-content .subnav > li:nth-child(2) > a{
+    color: #617A55;
+}
+.menu-content .subnav > li:hover{
+    background-color: #E9E6E6;
+}
+.auth-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-section li:nth-child(1){
+    font-weight: 700;
+    font-size: 2rem;
+    color:#617A55;
+}
+.auth-section li:nth-child(2) .user-display{
+    display: flex;
+    margin-left: 1rem;
+    background-color: #617A55;
+    padding: 1.1rem 1.1rem;
+    border-radius: 1rem;
+}
+.user-display .username{
+    color:white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0.6rem;
+    margin-top: 0.2rem;
+}
+.user-display .pic2{
+    margin-top: 0.6rem;
+}
+.auth-section .triangle{
+    /* display:none; */
+    /* position: absolute; */
+    /* z-index: 2; */
+    /* top: 6.2rem; */
+    margin-right: 20rem;
+    width:0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid transparent
+}
+.auth-section .subnav{
+    /* display: none; */
+    width:26rem;
+    /* z-index: 1; */
+    /* position: absolute; */
+    background-color: #fff;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem
+}
+.auth-section .sub{
+    display: none;
+    position: absolute;
+    right: 3rem;
+    z-index: 1;
+}
+.auth-section li:hover .sub{
+    display: block
+}
+.auth-section .subnav > li{
+    list-style-type: none;
+    padding: 1.5rem 1.6rem;
+    width: 100%
+}
+.auth-section .subnav li a{
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.auth-section .subnav > li:hover{
+    background-color: #E9E6E6;
+}
