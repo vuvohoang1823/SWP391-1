@@ -1,0 +1,100 @@
+html {
+  font-size: 10px;
+}
+
+.heading {
+  background-color: #b8c6c2;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #617a55;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.forms-container {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.322);
+  .forms-header {
+    background-color: #e2e8e7;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    .left-side {
+      font-size: 3rem;
+      color: #617a55;
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      span {
+        padding: 0 2rem;
+      }
+      .online {
+        color: white;
+        border-radius: 3px;
+        padding: 0.5rem 2rem;
+        background-color: #ef7b6b;
+      }
+      .offline {
+        color: white;
+        border-radius: 3px;
+        padding: 0.5rem 2rem;
+        background-color: #f69c14;
+      }
+    }
+  }
+  .form-customerDetails {
+    .form-name {
+      background-color: #f7f7f7;
+      .name {
+        padding: 2rem 2rem;
+        font-size: 3.1rem;
+        font-weight: bold;
+      }
+    }
+    .form-body {
+      padding: 2rem 25rem 2rem 4rem;
+      font-size: 1.5rem;
+      input {
+        font-size: 2rem;
+      }
+    }
+  }
+  .form-formDetails {
+    .form-name {
+      background-color: #f7f7f7;
+      .name {
+        padding: 2rem 2rem;
+        font-size: 3.1rem;
+        font-weight: bold;
+      }
+    }
+    .form-body {
+      padding: 2rem 10rem 2rem 4rem;
+      font-size: 1.5rem;
+      button {
+        font-size: 1.5rem;
+      }
+      input,
+      textarea {
+        font-size: 2rem;
+      }
+    }
+  }
+  .forms-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      font-size: 2rem;
+      padding: 0 1rem;
+      button {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+    }
+  }
+}
