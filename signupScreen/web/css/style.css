@@ -24,12 +24,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 94.6rem;
-    height: 51.2rem;
+    width: 100rem;
+    height: 60rem;
     background: #F5F5F5;
 }
 .logo-container{
-    margin-left: 10rem;
+    margin-left: 12rem;
     position: absolute;
     z-index: 3;
     margin-top: 1.8rem;
@@ -46,37 +46,56 @@ body{
     border-radius: 1rem 0 0 1rem;
     top: 0;
     left: 0;
-    width: 43.6rem;
-    height: 51.2rem;
+    width: 49rem;
+    height: 60rem;
 }
 .darken{
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.6rem;
-    height: 51.2rem;
+    width: 49rem;
+    height: 60rem;
     opacity: 0.3
 }
 .auth-side > p{
     font-size: 3rem;
     font-weight: 800;
     margin-top: 1rem;
-    color:black
+    color:black;
+    margin-left: 4rem;
 }
 .auth-side .close-btn{
-    margin-left: 42rem;
+    margin-left: 45rem;
     margin-top: 2rem;
 }
 .form-control{
-    margin-left: 2rem;
-    margin-top: 3.5rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
     border-color: transparent;
     background: transparent;
     display: flex;
     flex-direction: column;
 }
-.form-control input{
+
+.form-control .customer-name{
+    width: 37rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.customer-name input{
+    height: 100%;
+    width: 18rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 1.4rem;
+    border-radius: 0.5rem;
+    border: 2px solid #D9D9D9;
+    background: #FFF;
+}
+.form-control .phone, .username, .password, .confirm{
     width: 37rem;
     height: 5rem;
     font-size: 1.5rem;
@@ -85,38 +104,41 @@ body{
     border-radius: 0.5rem;
     border: 2px solid #D9D9D9;
     background: #FFF;
+    margin-top: 1.5rem;
+    margin-top: 0;
 }
-.form-control .password{
-    margin-top: 2rem;
-}
-.login-btn{
-    margin-top: 1.7rem;
-    width: 37rem;
-    height: 4.6rem;
-    border-color: transparent;
-    outline: none;
-    border-radius: 7px;
-    border: 1px solid #D9D9D9;
-    background: #0070f9;    
-    color:white;
-    font-size: 2rem;
+label{
     font-weight: 700;
+    font-size: 1rem;
+    margin-left: 1rem;
 }
-.form-control a{
-    margin-top: 1rem;
-    margin-left: 13rem;
-    font-size: 1.3rem;
-    color:#0070f9;
+.form-control .label-phone, .label-username, .label-password, .label-confirm{
+   margin-top: 1rem;
 }
-.form-control .line{
-    margin-top: 2rem;
-    margin-left: -3rem;
-    width: 42rem;
-    border-top: 2px #D9D9D9 solid;
+.password-toggle{
+    position: relative;
+}
+.password-toggle i{
+    position: absolute;
+    margin-top: 1.8rem;
+    right: 12rem
+}
+/* Eye icon styles */
+.eye-icon:before {
+    content: "\f06e";
+    /* Eye-slash icon Unicode value */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.eye-icon.active:before {
+    content: "\f070";
+    /* Eye icon Unicode value */
 }
 .cna-btn{
     margin-top: 2rem;
-    width: 28rem;
+    width: 37rem;
     height: 4.6rem;
     border-color: transparent;
     outline: none;
@@ -126,10 +148,7 @@ body{
     color:white;
     font-size: 2rem;
     font-weight: 700;
-    margin-left: 7.6rem;
+    margin-left: 0rem;
 }
-.cna-btn a{
-    text-decoration: none;
-    color:white
-}
+
 
