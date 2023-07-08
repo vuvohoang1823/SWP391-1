@@ -1,0 +1,136 @@
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #DDE6F1;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
+}
+.container-fluid{
+    padding: 0
+}
+.login-background{
+    width: 100vw;
+    height: 100vh;
+}
+.login-background > img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.2)
+}
+.login-box{
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94.6rem;
+    height: 51.2rem;
+    background: #F5F5F5;
+}
+.logo-container{
+    margin-left: 10rem;
+    position: absolute;
+    z-index: 3;
+    margin-top: 1.8rem;
+    display: flex;
+}
+.logo-container p{
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+.logo-side > img{
+    position: absolute;
+    border-radius: 1rem 0 0 1rem;
+    top: 0;
+    left: 0;
+    width: 43.6rem;
+    height: 51.2rem;
+}
+.darken{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43.6rem;
+    height: 51.2rem;
+    opacity: 0.3
+}
+.auth-side .close-btn{
+    margin-left: 42rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.auth-side .forgotPass-container{
+
+}
+.forgotPass-container .title{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.forgotPass-container .sub-title{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+.forgotPass-container .recover-step{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 3rem;
+}
+.recover-step span{
+    color: #237EEF
+}
+.forgotPass-box .place-holder{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.forgotPass-box form{
+    display: flex;
+    flex-direction: column;
+}
+.forgotPass-box form input{
+    height: 5rem;
+    width: calc(100% - 4rem);
+    border-radius: 0.5rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    outline: none;
+}
+.forgotPass-box .btn-container{
+    margin-top: 2rem;
+    display: flex;
+}
+.btn-container button{
+    outline: none;
+    border-color: transparent;
+}
+.btn-container button:nth-child(2){
+    background-color: #1877F2;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 4rem;
+    border-radius: 0.7rem;
+    border: 1px solid #D9D9D9;
+    margin-left: 3rem;
+}
+.btn-container button:nth-child(1){
+    background-color: #e4e6eb;
+    padding: 1rem 4rem;
+    border-radius: 0.7rem;
+    border: 1px solid #4b4f56;
+    border-color: transparent;
+    color: #4b4f56;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
